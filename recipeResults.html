@@ -157,7 +157,7 @@
       </div>
 
       <div class="filters" style="text-align: center;">
-        <div class="filter badge-info searchfilter" filtertype="favorites">
+        <div class="filter badge-info searchfilter" filtertype="favorites" style="display: none;">
 <!--      alignment style from github here: https://github.com/google/material-design-icons/issues/206
           literally magic! -->
           <i class="material-icons" style="display: inline-flex; vertical-align: middle;">
@@ -190,7 +190,7 @@
 <!--       </div>
  -->
 
-      <div class="recipes">
+     <div class="recipes">
 
         <div class="recipecard">
           <div class="recipeinfo bg-light">
@@ -231,7 +231,7 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Powerade Turkey
-                <div class="addbutton bg-light m-2" onclick="setSelectedRecipe(1, 'Powerade Turkey', 'https://payload223.cargocollective.com/1/4/130628/6773651/01.jpg', './recipeResult.html')">+</div>
+                <div class="addbutton bg-light m-2" data-toggle="modal" data-target="#exampleModal" onclick="setSelectedRecipe(1, 'Powerade Turkey', 'https://payload223.cargocollective.com/1/4/130628/6773651/01.jpg', './recipeResult.html')">+</div>
 <!--                 <div class="addbutton bg-light m-2 align-middle" onclick="">*</div>
  -->                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
@@ -248,7 +248,7 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Last Year's Leftovers
-                <div class="addbutton bg-light m-2" onclick="setSelectedRecipe(2, 'Last Year\'s Leftovers', 'https://payload223.cargocollective.com/1/4/130628/6773651/07.jpg', './recipeResult.html')">+</div>
+                <div class="addbutton bg-light m-2" data-toggle="modal" data-target="#exampleModal" onclick="setSelectedRecipe(2, 'Last Year\'s Leftovers', 'https://payload223.cargocollective.com/1/4/130628/6773651/07.jpg', './recipeResult.html')">+</div>
 <!--                 <div class="addbutton bg-light m-2 align-middle">*</div>
  -->                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
@@ -265,7 +265,7 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Rudolph
-                <div class="addbutton bg-light m-2" onclick="setSelectedRecipe(3, 'Rudolph', 'https://payload231.cargocollective.com/1/4/130628/6930157/10.jpg', './recipeResult.html')">+</div>
+                <div class="addbutton bg-light m-2" data-toggle="modal" data-target="#exampleModal" onclick="setSelectedRecipe(3, 'Rudolph', 'https://payload231.cargocollective.com/1/4/130628/6930157/10.jpg', './recipeResult.html')">+</div>
 <!--                 <div class="addbutton bg-light m-2 align-middle">*</div>
  -->                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
@@ -282,7 +282,7 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Plymoth Cauliflower
-                <div class="addbutton bg-light m-2" onclick="setSelectedRecipe(4, 'Plymoth Cauliflower', 'https://payload223.cargocollective.com/1/4/130628/6773651/06.jpg', './recipeResult.html')">+</div>
+                <div class="addbutton bg-light m-2" data-toggle="modal" data-target="#exampleModal" onclick="setSelectedRecipe(4, 'Plymoth Cauliflower', 'https://payload223.cargocollective.com/1/4/130628/6773651/06.jpg', './recipeResult.html')">+</div>
 <!--                 <div class="addbutton bg-light m-2 align-middle">*</div>
  -->                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
@@ -304,7 +304,7 @@
         <button type="button" class="btn btn-secondary sharpcorners" style="width: 21%;" onclick="goto('./index.html')">Plan</button>
         <button type="button" class="btn btn-secondary text-warning" style="width: 21%" onclick="goto('./recipes.html')">Recipes</button>
         <button type="button" class="btn btn-secondary" style="width: 21%" onclick="goto('./list.html')">S. List</button>
-        <button type="button" class="btn btn-secondary" style="width: 21%" onclick="goto('./inventory.html')">Inv.</button>
+        <button type="button" class="btn btn-secondary" style="width: 21%" onclick="goto('./inventoryNew.html')">Inv.</button>
         <button type="button" class="btn btn-secondary sharpcorners" style="width: 21%;" onclick="goto('./budget.html')">Budget</button>
       </div>
     </footer>
