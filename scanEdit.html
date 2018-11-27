@@ -218,7 +218,7 @@
         let newEntry = document.createElement("div");
         newEntry.classList.add("input-group");
         newEntry.classList.add("mb-3");
-        newEntry.innerHTML = '<div class="input-group-prepend scanneditem"><div class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input" checked></div></div><input type="text" class="form-control itemname" aria-label="Text input with checkbox"><input type="text" class="form-control itemprice" aria-label="Text input with checkbox">';
+        newEntry.innerHTML = '<div class="input-group-prepend scanneditem"><div class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input" checked></div></div><input type="text" class="form-control itemname" aria-label="Text input with checkbox" placeholder="Item name"><input type="text" class="form-control itemprice" aria-label="Text input with checkbox" placeholder="$">';
         (button.parentElement).insertBefore(newEntry, button);
       }
     </script>

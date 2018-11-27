@@ -50,7 +50,8 @@
         <button type="button" class="btn btn-secondary sharpcorners btn-lg text-white" onclick="goto('./inventoryRecipe.html')">Sort by Recipe</button> -->
       </div>
       <div class="btn-group float-right" role="group">
-        <button type="button" class="btn btn-secondary btn-lg sharpcorners text-warning" onclick="">Edit</button>
+        <!-- <button type="button" class="btn btn-secondary btn-lg sharpcorners text-light rounded" style="float: left;" onclick="goto('inventoryNew.html')">Back</button> -->
+        <button type="button" class="btn btn-info btn-lg sharpcorners text-light rounded" onclick="goto('inventoryEditRecieptNew.html')">Quick Scan Receipt</button>
       </div>
     </div>
 
@@ -58,7 +59,7 @@
       <button id="addEntryButton" type="button" class="btn btn-info btn-lg btn-block" style="" onclick="addNewEntry()">+ New Entry</button>
 
       <div class="row" style="margin-top: 10px; margin-bottom: 80px;">
-        <button type="button" class="btn btn-secondary col-6" data-dismiss="modal" onclick="goto('./inventory.html')">Cancel</button>
+        <button type="button" class="btn btn-secondary col-6" data-dismiss="modal" onclick="goto('./inventoryNew.html')">Cancel</button>
         <button type="button" class="btn btn-primary col-6" onclick="saveChanges()">Save</button>
       </div>
     </div>
@@ -163,7 +164,7 @@
       function saveChanges() {
         let currentItems = getCurrentItems();
         saveToLocalStorage(currentItems);
-        goto('./inventory.html');
+        goto('./inventoryNew.html');
       }
 
       function addNewEntry() {
@@ -171,17 +172,16 @@
         let newEntry = document.createElement("div");
         newEntry.classList.add("input-group");
         newEntry.classList.add("mb-3");
-        newEntry.innerHTML = '<div class="input-group-prepend scanneditem"><div class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input" checked></div></div><input type="text" class="form-control itemname" aria-label="Text input with checkbox" placeholder="Item name"><input type="date" class="form-control itemexp" aria-label="Text input with checkbox">';
+        newEntry.innerHTML = '<div class="input-group-prepend scanneditem"><div class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input" checked></div></div><input type="text" class="form-control itemname" aria-label="Text input with checkbox" placeholder="Item Name"><input type="date" class="form-control itemexp" aria-label="Text input with checkbox">';
         (button.parentElement).insertBefore(newEntry, button);
       }
 
       function addNewEntryWithContents(item) {
         let button = document.getElementById("addEntryButton");
         let newEntry = document.createElement("div");
-
         newEntry.classList.add("input-group");
         newEntry.classList.add("mb-3");
-        newEntry.innerHTML = '<div class="input-group-prepend scanneditem"><div class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input" checked></div></div><input type="text" class="form-control itemname" aria-label="Text input with checkbox" value=' + JSON.stringify(item.name) + ' placeholder="Item name"><input type="date" class="form-control itemexp" aria-label="Text input with checkbox" value=' + item.expirationDate + '>';
+        newEntry.innerHTML = '<div class="input-group-prepend scanneditem"><div class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input" checked></div></div><input type="text" class="form-control itemname" aria-label="Text input with checkbox" placeholder="Item Name" value=' + JSON.stringify(item.name) + '><input type="date" class="form-control itemexp" aria-label="Text input with checkbox" value=' + item.expirationDate + '>';
         (button.parentElement).insertBefore(newEntry, button);
 
         console.log(item);

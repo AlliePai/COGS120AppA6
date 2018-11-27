@@ -109,7 +109,7 @@
         let budget = budgetSelector.value;
         // let unit = unitSelector.value;
 
-        if (!budget || isNaN(budget)) 
+        if (!budget || isNaN(budget) || budget < 0) 
           budget = 0;
 
         localStorage.setItem('budgetAmount', budget);
@@ -143,7 +143,7 @@
 
       function updateBudgetText(val) {
         let budgetInput = document.getElementById('budgetInput');
-        budgetInput.value = val;
+        budgetInput.value = (!val || isNaN(val) || val <= 0) ? 0 : val;
       }
 
       getBudgetThresholdFromLocalStorage();

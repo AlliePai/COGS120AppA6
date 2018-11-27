@@ -171,14 +171,14 @@
         <div class="filter badge-info searchfilter" filtertype="paleo">Paleo</div>
       </div>
 
-      <div class="dates" style="text-align: center;">
+<!--       <div class="dates" style="text-align: center;">
         <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Sunday" onclick=''>Sun</div>
         <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Monday" onclick=''>Mon</div>
         <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Tuesday" onclick=''>Tue</div>
         <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Wednesday" onclick=''>Wed</div>
         <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Thursday" onclick=''>Thu</div>
         <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Friday" onclick=''>Fri</div>
-        <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Saturday" onclick=''>Sat</div>
+        <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Saturday" onclick=''>Sat</div> -->
 
 <!--         <div class="filter badge-info" style="background-color: #990033;" day="Sunday" onclick='setDate("Sunday");'>Sun</div>
         <div class="filter badge-info" style="background-color: #990033;" day="Monday" onclick='setDate("Monday");'>Mon</div>
@@ -187,8 +187,8 @@
         <div class="filter badge-info" style="background-color: #990033;" day="Thursday" onclick='setDate("Thursday");'>Thu</div>
         <div class="filter badge-info" style="background-color: #990033;" day="Friday" onclick='setDate("Friday");'>Fri</div>
         <div class="filter badge-info" style="background-color: #990033;" day="Saturday" onclick='setDate("Saturday");'>Sat</div> -->
-      </div>
-
+<!--       </div>
+ -->
 
       <div class="recipes">
 
@@ -197,8 +197,9 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Canned Cranberry Sauce
-                <div class="addbutton bg-light m-2" onclick="addToPlan(0, 'Canned Cranberry Sauce', 'https://payload223.cargocollective.com/1/4/130628/6773651/04.jpg', './recipeResult.html')">+</div>
-                <div class="addbutton bg-light m-2 align-middle" onclick="addToFavorites(0, 'Canned Cranberry Sauce', 'https://payload223.cargocollective.com/1/4/130628/6773651/04.jpg', './recipeResult.html', 'Monday')">*</div>
+                <!-- <div class="addbutton bg-light m-2" onclick="addToPlan(0, 'Canned Cranberry Sauce', 'https://payload223.cargocollective.com/1/4/130628/6773651/04.jpg', './recipeResult.html')" data-toggle="modal" data-target="#exampleModal">+</div> -->
+                <div class="addbutton bg-light m-2" data-toggle="modal" data-target="#exampleModal" onclick="setSelectedRecipe(0, 'Canned Cranberry Sauce', 'https://payload223.cargocollective.com/1/4/130628/6773651/04.jpg', './recipeResult.html')">+</div>
+<!--                 <div class="addbutton bg-light m-2 align-middle" onclick="addToFavorites(0, 'Canned Cranberry Sauce', 'https://payload223.cargocollective.com/1/4/130628/6773651/04.jpg', './recipeResult.html', 'Monday')">*</div> -->
                 <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
               <!-- <div class="align-middle recipeinfo" style="display: inline-block;">
@@ -230,9 +231,9 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Powerade Turkey
-                <div class="addbutton bg-light m-2" onclick="addToPlan(1, 'Powerade Turkey', 'https://payload223.cargocollective.com/1/4/130628/6773651/01.jpg', './recipeResult.html')">+</div>
-                <div class="addbutton bg-light m-2 align-middle" onclick="">*</div>
-                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
+                <div class="addbutton bg-light m-2" onclick="setSelectedRecipe(1, 'Powerade Turkey', 'https://payload223.cargocollective.com/1/4/130628/6773651/01.jpg', './recipeResult.html')">+</div>
+<!--                 <div class="addbutton bg-light m-2 align-middle" onclick="">*</div>
+ -->                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
             </div>
           </div>
@@ -247,9 +248,9 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Last Year's Leftovers
-                <div class="addbutton bg-light m-2" onclick="addToPlan(2, 'Last Year\'s Leftovers', 'https://payload223.cargocollective.com/1/4/130628/6773651/07.jpg', './recipeResult.html')">+</div>
-                <div class="addbutton bg-light m-2 align-middle">*</div>
-                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
+                <div class="addbutton bg-light m-2" onclick="setSelectedRecipe(2, 'Last Year\'s Leftovers', 'https://payload223.cargocollective.com/1/4/130628/6773651/07.jpg', './recipeResult.html')">+</div>
+<!--                 <div class="addbutton bg-light m-2 align-middle">*</div>
+ -->                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
             </div>
           </div>
@@ -264,9 +265,9 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Rudolph
-                <div class="addbutton bg-light m-2" onclick="addToPlan(3, 'Rudolph', 'https://payload231.cargocollective.com/1/4/130628/6930157/10.jpg', './recipeResult.html')">+</div>
-                <div class="addbutton bg-light m-2 align-middle">*</div>
-                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
+                <div class="addbutton bg-light m-2" onclick="setSelectedRecipe(3, 'Rudolph', 'https://payload231.cargocollective.com/1/4/130628/6930157/10.jpg', './recipeResult.html')">+</div>
+<!--                 <div class="addbutton bg-light m-2 align-middle">*</div>
+ -->                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
             </div>
           </div>
@@ -281,9 +282,9 @@
             <div class="">
               <div class="align-middle" style="display: inline-block;">
                 Plymoth Cauliflower
-                <div class="addbutton bg-light m-2" onclick="addToPlan(4, 'Plymoth Cauliflower', 'https://payload223.cargocollective.com/1/4/130628/6773651/06.jpg', './recipeResult.html')">+</div>
-                <div class="addbutton bg-light m-2 align-middle">*</div>
-                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
+                <div class="addbutton bg-light m-2" onclick="setSelectedRecipe(4, 'Plymoth Cauliflower', 'https://payload223.cargocollective.com/1/4/130628/6773651/06.jpg', './recipeResult.html')">+</div>
+<!--                 <div class="addbutton bg-light m-2 align-middle">*</div>
+ -->                <div class="gobutton bg-light m-2" onclick="goto('./recipeResult.html')">Go To Recipe</div>
               </div>
             </div>
           </div>
@@ -311,6 +312,34 @@
     <!--     toasts -->
     <div id="snackbar"></div>
 
+    <!-- Modal -->
+    <div class="modal fade" style="margin-top: 100px;" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Select a day to make the recipe</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="dates" style="text-align: center;">
+              <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Sunday" onclick=''>Sun</div>
+              <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Monday" onclick=''>Mon</div>
+              <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Tuesday" onclick=''>Tue</div>
+              <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Wednesday" onclick=''>Wed</div>
+              <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Thursday" onclick=''>Thu</div>
+              <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Friday" onclick=''>Fri</div>
+              <div class="filter badge-info dayfilter" style="background-color: #990033;" day="Saturday" onclick=''>Sat</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" onclick="addToPlan(getSelectedId(), getSelectedName(), getSelectedImage(), './recipeResult.html')">Set Day</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -326,6 +355,12 @@
       // toggle status of each filter
       let toggleStatus = [];
       let dayToggleStatus = [];
+
+      // AKJLKSJDFLS WHY HOW DO FRAMEWORKS MAINTAIN STATEKJLKDSJFJDSLF
+      let selectedRecipeName = "";
+      let selectedRecipeId = "";
+      let selectedRecipeUrl = "";
+      let selectedRecipeImage = "";
 
       // currently selected day for placement
       let selectedDay = "";
@@ -422,6 +457,7 @@
       // date: date associated with recipe
       // TODO: needs level of indirection- select day first
       function addToPlan(id, name, image, url) {
+        console.log('hi');
         // no day selected
         if (selectedDay === "") {
           toast("Select a day first!");
@@ -439,9 +475,11 @@
           day: selected_date,
           date: "01/01/1990",
         };
+        $('#exampleModal').modal('hide');
         addPlanMessage();
         addIngredientsToList(name);
         saveRecipeToLocalStorage(recipeObj);
+
       }
 
       function addToFavorites(id, name, image, url, day) {
@@ -546,6 +584,18 @@
           goto("./recipeResults.html");
         }
       }
+
+      function setSelectedRecipe(id, name, imgurl, url) {
+        selectedRecipeName = name;
+        selectedRecipeImage = imgurl;
+        selectedRecipeId = id;
+        selectedRecipeUrl = url;
+        console.log(name + " " + id + " " + imgurl + " " + url);
+      }
+
+      let getSelectedName = () => selectedRecipeName;
+      let getSelectedId = () => selectedRecipeId;
+      let getSelectedImage = () => selectedRecipeImage;
 
       initPage();
     </script>

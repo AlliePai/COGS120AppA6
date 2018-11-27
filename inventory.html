@@ -91,7 +91,7 @@
         for (let i = 0; i < inventoryData.length; i++) {
           // TODO: create different categories soon
           let newItemDiv = document.createElement('li');
-          newItemDiv.innerHTML = inventoryData[i].name;
+          newItemDiv.innerHTML = inventoryData[i].name + " <em style='color: grey; font-size: 12px; font-style: normal;'>(Expires " + inventoryData[i].expirationDate + ")</em>";
           newItemDiv.setAttribute('itemid', inventoryData[i].id);
           document.getElementById('misclist').appendChild(newItemDiv);
         }
